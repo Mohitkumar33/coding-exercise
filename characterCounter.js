@@ -3,26 +3,21 @@ import "./styles.css";
 
 export default function App() {
   const [tweetText, setTweetText] = useState("");
-  const [textLimit, setTextLimit] = useState(140);
-  const [disableTextarea, setDisableTextare] = useState(false);
-  const inputRead = (e) =>
-    textLimit > 0
-      ? (setTweetText(e.target.value),
-        setDisableTextare(false),
-        setTextLimit(140 - tweetText.length))
-      : (setTextLimit(0), setDisableTextare(true));
 
   return (
     <div className="App">
       <textarea
         placeholder="Whats happening"
-        disabled={disableTextarea}
-        onChange={inputRead}
+        value={tweetText}
+        onChange={(e) => {
+          e.target.value.length <= 140 && setTweetText(e.target.value);
+        }}
       ></textarea>
-      <p>{textLimit}</p>
+      <p>{140 - tweetText.length}</p>
     </div>
   );
 }
+
 
 // codesandbox link
 // https://codesandbox.io/s/competent-vaughan-3hsg9i
