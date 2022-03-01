@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.app-header {
+  text-align: center;
+}
+
+.app-body {
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+/***********toast**************/
+.toast-3 {
+  height: 150px;
+  width: 350px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+  /* position: fixed;
+  bottom: 0; */
+}
+
+.toast-3 h3 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.toast-cross {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 10px;
+  fill: rgb(126, 125, 125);
+  gap: 50 px;
+}
+
+.toast-cross:hover {
+  fill: red;
+}
