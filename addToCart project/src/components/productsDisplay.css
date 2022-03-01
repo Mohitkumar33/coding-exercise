@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.allProducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+}
+
+.card * {
+  margin-bottom: 0.5rem;
+}
