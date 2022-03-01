@@ -35,5 +35,5 @@ export default function App() {
   );
 }
 
-codesandbox link
-https://codesandbox.io/s/switch-tabs-exercis-3qewe5
+// codesandbox link
+// https://codesandbox.io/s/switch-tabs-exercis-3qewe5
